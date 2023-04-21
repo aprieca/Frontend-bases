@@ -1,0 +1,98 @@
+html {
+  box-sizing: border-box; }
+
+main {
+  background: url(img/background.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  overflow: auto; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0; }
+
+.card-section {
+  text-align: center; }
+  .card-section .card {
+    width: 310px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 15px;
+    display: inline-block;
+    vertical-align: top; }
+  .card-section .card-content {
+    padding: 10px;
+    background: #ffffffb8;
+    border-radius: 17px; }
+  .card-section .task-type {
+    text-align: left;
+    font-weight: bold; }
+  .card-section .task {
+    width: 100%;
+    height: 150px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 10px; }
+    .card-section .task:hover {
+      background-color: #1783b3; }
+      .card-section .task:hover .close-task {
+        color: #000000; }
+      .card-section .task:hover .task-name {
+        color: #ffffff; }
+      .card-section .task:hover .task-content {
+        color: #ffffff; }
+      .card-section .task:hover .task-actions {
+        color: #0e0eeb; }
+    .card-section .task .close-task {
+      color: #ff0000;
+      text-align: right;
+      padding-right: 13px;
+      padding-top: 10px;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased; }
+      .card-section .task .close-task::after {
+        content: "\f057";
+        font: var(--fa-font-solid); }
+    .card-section .task .task-name {
+      padding-left: 15px;
+      text-align: left;
+      font-weight: bold;
+      font-size: 13px; }
+    .card-section .task .task-content {
+      text-align: left;
+      padding-left: 15px; }
+    .card-section .task .task-actions {
+      text-align: left;
+      padding-left: 17px;
+      color: #ffffff; }
+
+.circle-icon-green {
+  padding: 7px;
+  border-radius: 50%;
+  background: #008040; }
+
+.circle-icon-red {
+  padding: 7px;
+  border-radius: 50%;
+  background: #ff0000; }
+
+.circle-icon-orange {
+  padding: 7px;
+  border-radius: 50%;
+  background: #dd7940; }
+
+#kanbas-title {
+  margin: 0 auto;
+  width: 250px;
+  padding-top: 40px; }
+  #kanbas-title > h1 {
+    font-size: 25px;
+    color: #ffffff;
+    padding: 11px;
+    border-radius: 10px;
+    background-color: #ffffff42;
+    text-align: center; }
+
+/*# sourceMappingURL=main.css.map */

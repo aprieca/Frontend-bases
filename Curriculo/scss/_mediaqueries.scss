@@ -1,0 +1,30 @@
+@media only screen and (max-width: 600px) {
+    .curriculum {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .personal-info {
+        border-bottom: solid 1px;
+        border-right: none;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .personal-qualities {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .progress {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .skills {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 5px;
+    }
+
+}

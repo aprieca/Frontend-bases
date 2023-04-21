@@ -1,0 +1,129 @@
+html {
+  box-sizing: border-box;
+}
+
+main{
+  background: url(img/background.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  overflow: auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin:0;
+  padding: 0;
+}
+
+#kanbas-title{
+  margin: 0 auto;
+  width: 250px;
+  padding-top: 40px;
+}
+
+#kanbas-title>h1{
+  font-size: 25px;
+  color: white;
+  padding: 11px;
+  border-radius: 10px;
+  background-color: #ffffff42;
+  text-align: center;
+}
+
+.task{
+  height: 150px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.task-type{
+  text-align: left;
+  font-weight: bold;
+}
+.task-name{
+  padding-left: 15px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 13px;
+}
+.task-content{
+  text-align:left;
+  padding-left: 15px;
+}
+
+.task-actions{
+  text-align:left;
+  padding-left: 17px;
+  color: white;
+}
+
+.card-section{
+  text-align: center;
+}
+
+.card {
+  width: 310px;
+  height: 200px;
+  margin-top: 20px;
+  margin-left: 15px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.card-content {
+  padding: 10px;
+  background: #ffffffb8;
+  border-radius: 17px;
+}
+
+.close-task{
+  color:red;
+  text-align: right;
+  padding-top: 10px; 
+  padding-right: 13px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.close-task::after{
+  content: "\f057"; 
+  font: var(--fa-font-solid);
+}
+
+.circle-icon-green {
+  background: #008040;
+  padding:7px;
+  border-radius: 50%;
+}
+.circle-icon-red {
+  background: #ff0000;
+  padding:7px;
+  border-radius: 50%;
+}
+.circle-icon-orange {
+  background: #ef8344;
+  padding:7px;
+  border-radius: 50%;
+}
+
+.task:hover .close-task{
+  color: black;
+}
+
+.task:hover .task-name{
+  color: white;
+}
+
+.task:hover .task-content{
+  color: white;
+}
+.task:hover{
+  background-color: rgb(23,131,179);
+}
+.task:hover .task-actions{
+  color: blue;
+}
+
+

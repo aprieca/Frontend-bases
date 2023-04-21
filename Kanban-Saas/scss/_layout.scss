@@ -1,0 +1,117 @@
+html {
+  box-sizing: border-box;
+}
+
+main {
+  background: url(img/background.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  overflow: auto;
+}
+
+body {
+  font-family: $font-main-font;
+  margin: 0;
+  padding: 0;
+}
+
+
+.card-section {
+  text-align: center;
+
+  .card {
+    width: 310px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 15px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .card-content {
+    padding: 10px;
+    background: $color-transparent-white;
+    border-radius: 17px;
+  }
+
+  .task-type {
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .task {
+    width: 100%;
+    height: 150px;
+    background-color: $color-white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  
+    &:hover {
+      background-color: $color-light-blue;
+  
+      .close-task {
+        color: $color-black;
+      }
+  
+      .task-name {
+        color: $color-white;
+      }
+  
+      .task-content {
+        color: $color-white;
+      }
+  
+      .task-actions {
+        color: $color-strong-blue;
+      }
+    }
+
+    .close-task {
+      color: $color-red;
+      text-align: right;
+      padding-right: 13px;
+      padding-top: 10px;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+    
+      &::after {
+        content: "\f057";
+        font: var(--fa-font-solid);
+      }
+    }
+  
+    .task-name {
+      padding-left: 15px;
+      text-align: left;
+      font-weight: bold;
+      font-size: 13px;
+    }
+  
+    .task-content {
+      text-align: left;
+      padding-left: 15px;
+    }
+    
+    .task-actions {
+      text-align: left;
+      padding-left: 17px;
+      color: $color-white;
+    }
+  }
+
+  }
+
+  
+
+.circle-icon-green {
+  @include icon-circle($color-green);
+}
+
+.circle-icon-red {
+  @include icon-circle($color-red);
+}
+
+.circle-icon-orange {
+  @include icon-circle($color-orange);
+}

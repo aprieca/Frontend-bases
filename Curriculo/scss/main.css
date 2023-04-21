@@ -1,0 +1,152 @@
+.personal-info {
+  border: solid 1px;
+  border-right: solid 1px;
+  background-color: #F8DCD1;
+  display: flex;
+  flex-direction: column;
+  width: 30%; }
+  .personal-info .profile-pic {
+    margin-bottom: 10px;
+    width: 100%; }
+  .personal-info .personal-info-title {
+    background: #303741;
+    color: #F8DCD1;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 3px; }
+
+.personal-info > p {
+  font-size: 14px;
+  margin-left: 16px;
+  margin-top: 5px;
+  margin-right: 16px; }
+
+.personal-qualities {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  width: 70%; }
+  .personal-qualities .user-name-container {
+    align-items: center;
+    align-content: center;
+    background-color: #303741;
+    display: flex;
+    height: 20%;
+    justify-content: center;
+    width: 100%; }
+    .personal-qualities .user-name-container .user-name {
+      color: #F8DCD1;
+      margin: auto; }
+  .personal-qualities .personal-qualities-category {
+    background: #303741;
+    color: #F8DCD1;
+    font-size: 15px;
+    padding: 3px; }
+  .personal-qualities .qualities-container {
+    align-items: center;
+    display: flex; }
+    .personal-qualities .qualities-container .qualities-location {
+      padding-left: 10px;
+      padding-right: 10px;
+      position: relative;
+      width: 30%; }
+      .personal-qualities .qualities-container .qualities-location::after {
+        border-left: 3px solid #303741;
+        bottom: 0;
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0; }
+
+.container {
+  display: flex;
+  justify-content: center; }
+
+.curriculum {
+  background-color: white;
+  border: solid;
+  display: flex;
+  margin-top: 20px;
+  padding: 5px;
+  width: 50%; }
+
+.progress {
+  background-color: #D1EDF8;
+  height: 22px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  position: relative; }
+  .progress .bar {
+    background-color: #303741;
+    height: 100%;
+    position: absolute;
+    width: 75%; }
+  .progress .lang-title {
+    color: #F8DCD1;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 3px; }
+
+.qualities-title {
+  padding-left: 5px;
+  width: 70%; }
+
+.skills {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  margin-bottom: 30px;
+  margin-top: 30px; }
+  .skills .skill-icons-background {
+    background: #F8DCD1;
+    border-radius: 10px;
+    display: flex;
+    margin-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100px; }
+  .skills .skill-icons {
+    margin: 0 auto;
+    width: 50px; }
+
+@media only screen and (max-width: 600px) {
+  .curriculum {
+    flex-direction: column;
+    width: 100%; }
+
+  .personal-info {
+    border-bottom: solid 1px;
+    border-right: none;
+    margin-bottom: 10px;
+    width: 100%; }
+
+  .personal-qualities {
+    margin-left: 0;
+    width: 100%; }
+
+  .progress {
+    margin-left: 0;
+    margin-right: 0; }
+
+  .skills {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5px; } }
+html {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0; }
+
+main {
+  background-color: #ececec;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  overflow: auto; }
+
+/*# sourceMappingURL=main.css.map */
